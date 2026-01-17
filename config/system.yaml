@@ -5,7 +5,11 @@ system:
   video_enabled: true
   storage: sqlite
   gui: tkinter
-
+  
+system:
+  mode: offline
+  llm_provider: local
+  
 openai:
   api_key: YOUR_API_KEY
   model: gpt-4o-mini
