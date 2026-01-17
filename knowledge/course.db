@@ -1,0 +1,23 @@
+CREATE TABLE courses (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  domain TEXT,
+  content TEXT
+);
+
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  email TEXT
+);
+
+CREATE TABLE progress (
+  student_id INTEGER,
+  domain TEXT,
+  completion REAL
+);
+
+CREATE TABLE certificates (
+  student_id INTEGER,
+  domain TEXT,
+  issued_on TEXT
+);
