@@ -1,0 +1,15 @@
+system:
+  mode: hybrid        # online | offline | hybrid
+  llm_provider: openai # openai | local
+  voice_enabled: true
+  video_enabled: true
+  storage: sqlite
+  gui: tkinter
+
+openai:
+  api_key: YOUR_API_KEY
+  model: gpt-4o-mini
+
+local_model:
+  engine: llama.cpp
+  model_path: models/llama.gguf
